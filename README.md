@@ -1,6 +1,6 @@
 # impress-plugin
 
-I am looking for PHP expertise to customize a php page.
+I am looking for PHP expertise to customize a property listing template file.
 
 I am using the IMPress listings plugin (formerly WP Listings) to display real estate listings, but can't get the listing pages to display a sidebar. (The sidebar is selected in Avada page options.)
 
