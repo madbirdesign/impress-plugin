@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * The Template for displaying all single listing posts
  * Customized for Lewis EDC by Mad Bird Design, 03/20/2016
  * Customize single-listing.php file and upload to wp-content/themes/Avada-Child-Theme/
