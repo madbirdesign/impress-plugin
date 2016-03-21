@@ -2,7 +2,7 @@
 /**
  * The Template for displaying all single listing posts
  * Customized for Lewis EDC by Mad Bird Design, 03/20/2016
- * Replace single-listing.php file in wp-content/plugins/wp-listings/includes/views
+ * Customize single-listing.php file and upload to wp-content/themes/Avada-Child-Theme/
  * List of changes in this file:
  	1. Add previous and post navigation
  	2. Change Lot Sq Ft to Lot Acres
