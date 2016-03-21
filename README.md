@@ -20,5 +20,7 @@ STEPS TAKEN:
     <div id="sidebar" style="<?php echo $sidebar_css; ?>"><?php generated_dynamic_sidebar(); ?></div>
 
 LINKS:
+
 IMPress Listings plugin page > https://wordpress.org/plugins/wp-listings/
+
 Thread describing custom sidebar into custom template > https://theme-fusion.com/forums/topic/calling-custom-sidebar-into-custom-template/
