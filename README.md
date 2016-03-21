@@ -12,11 +12,13 @@ I have received some direction from plugin and themeforest support, but Avada do
 
 Would love to hire someone who could help me finish customizing this plugin. 
 
-STEPS TAKEN
+STEPS TAKEN:
+
 1) Customized the plugin file (single-listing.php) and put it in my active theme folder (wp-content/themes/Avada-Child-Theme/)
+
 2) Tried calling a custom sidebar into the single-listing.php file. Problem: It comes in in the content div, not outside of it. Code for that is here: 
     <div id="sidebar" style="<?php echo $sidebar_css; ?>"><?php generated_dynamic_sidebar(); ?></div>
 
-LINKS
+LINKS:
 IMPress Listings plugin page > https://wordpress.org/plugins/wp-listings/
 Thread describing custom sidebar into custom template > https://theme-fusion.com/forums/topic/calling-custom-sidebar-into-custom-template/
