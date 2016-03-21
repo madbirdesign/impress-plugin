@@ -1,7 +1,16 @@
 <?php
 /**
  * The Template for displaying all single listing posts
- *
+ * Customized for Lewis EDC by Mad Bird Design, 03/20/2016
+ * Replace single-listing.php file in wp-content/plugins/wp-listings/includes/views
+ * List of changes in this file:
+ 	1. Add previous and post navigation
+ 	2. Change Lot Sq Ft to Lot Acres
+ 	3. Add custom sidebar @ line 40
+ * List of changes in other files:
+ 	A. See additional changes in Avada > Theme Options > Custom CSS
+		1. Hide div id="listing-contact" and navigation at bottom of page (in CSS)
+	B. See additional changes in wp-content/plugins/wp-listings/includes/class-listings.php
  * @package WP Listings
  * @since 0.1.0
  */
@@ -28,6 +37,13 @@ function single_listing_post_content() {
 
 	?>
 
+<div id="sidebar" style="<?php echo $sidebar_css; ?>"><?php generated_dynamic_sidebar(); ?></div>
+
+<div class="single-navigation clearfix">
+			<?php previous_post_link('%link', __('Previous', 'Avada')); ?>
+			<?php next_post_link('%link', __('Next', 'Avada')); ?>
+		</div>
+		
 	<div itemscope itemtype="http://schema.org/SingleFamilyResidence" class="entry-content wplistings-single-listing">
 
 		<div class="listing-image-wrap">
@@ -70,7 +86,7 @@ function single_listing_post_content() {
 		}
 
 		if ( '' != get_post_meta( $post->ID, '_listing_lot_sqft', true ) ) {
-			$listing_meta .= sprintf( '<li class="listing-lot-sqft"><span class="label">Lot Sq Ft: </span>%s</li>', get_post_meta( $post->ID, '_listing_lot_sqft', true ) );
+			$listing_meta .= sprintf( '<li class="listing-lot-sqft"><span class="label">Lot Acres: </span>%s</li>', get_post_meta( $post->ID, '_listing_lot_sqft', true ) );
 		}
 
 		$listing_meta .= sprintf( '</ul>');
