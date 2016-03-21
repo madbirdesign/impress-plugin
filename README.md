@@ -16,8 +16,7 @@ STEPS TAKEN:
 
 1) Customized the plugin file (single-listing.php) and put it in my active theme folder (wp-content/themes/Avada-Child-Theme/)
 
-2) Tried calling a custom sidebar into the single-listing.php file. Problem: It appears at the top of div id="sidebar", not outside of it. Code for that is here: 
-    [<div id="sidebar" style="<?php echo $sidebar_css; ?>"><?php generated_dynamic_sidebar(); ?></div>]
+2) Tried calling a custom sidebar into the single-listing.php file. Problem: It appears at the top of div id="sidebar", not outside of it. Code for that is here: <div id="sidebar" style="<?php echo $sidebar_css; ?>"><?php generated_dynamic_sidebar(); ?></div>
 
 LINKS:
 
